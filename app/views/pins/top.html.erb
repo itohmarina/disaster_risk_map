@@ -1,26 +1,5 @@
 <h1>Pins#top</h1>
-<p>Find me in app/views/pins/top.html.erb</p>
+<p><%= link_to "新しいピン", new_pin_path, 'data-turbolinks': false %></p>
 
-<div id="google-map">Now Loading...</div>
+<div id="google-map"></div>
 
-
-　<script>
-  var map;
-  function initMap() {
-    var target = document.getElementById('google-map');
-    var empire = {lat: 40.748441, lng: -73.985664};
-    //Empire State Bldg の緯度（latitude）と経度（longitude）
-    map = new google.maps.Map(target, {
-      center: empire,
-      zoom: 14
-    });
-
-    var marker = new google.maps.Marker({
-      position: map.getCenter(),
-      map: map,
-      title: "Empire !",
-      animation: google.maps.Animation.DROP
-    });
-  }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCDg-KNY6Z3rTWiCM8bz3n6D_RpSO6CbLA&language=ja&region=JP&callback=initMap" async defer></script>

@@ -13,9 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@import '~bootstrap/scss/bootstrap'
 
 #google-map{
   height: 300px;
   width: 500px;
-  /*background-color: orange;*/
+  background-color: orange;
+}
+
+#map{
+  height: 300px;
+  width: 500px;
 }
